@@ -1,0 +1,129 @@
+@font-face {
+    font-family:'Rubik-VariableFont_wght' ;
+    src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
+html, body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #FFF5EE;
+    transition: background-color 0.3s ease;
+    font-family: 'Rubik-VariableFont_wght';
+}
+p{
+    font-family: 'Rubik-VariableFont_wght';
+}
+body.active-theme{
+    background-color: black;
+    color: #FFF5EE;;
+}
+body.active-theme .code-block-UTF-8 {
+    background-color: #1e1e1e;
+    color: #f8f8f2;
+    border-color: #444;
+}
+body.active-theme .code-block-ASCII {
+    background-color: #1e1e1e;
+    color: #f8f8f2;
+    border-color: #444;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.header__logo{
+    display: block;
+    width: 145px;
+    height: 30px;
+}
+.theme_toggle{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/sun.png');
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+.theme_toggle.active{
+    background-image: url('../img/moon.png');
+}
+
+
+.header__border{
+    border-bottom: 2px solid #00195d;
+    width: 95%;
+    margin: 0 auto;
+    padding: -15px;
+}
+.footer__border{
+    border-bottom: 2px solid #00195d;
+    width: 95%;
+    margin: 0 auto;
+    padding: -15px;
+}
+.copy-text{
+    cursor: pointer;
+}
+.for_me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.code-block-UTF-8 {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border: 3px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    white-space: pre;
+    overflow-x: auto;
+    }
+.code-block-ASCII{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border: 3px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    white-space: pre;
+    overflow-x: auto;
+}
+.top_text-ASCII{
+    display: flex;
+    justify-content: center;
+}
+.text-ASCII{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.unicode_text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+        border-bottom: 2px solid #00195d;
+    width: 95%;
+    margin: 0 auto;
+    padding: -15px;
+}
+.top_text{
+    display: flex;
+    justify-content: center;
+}
+
+
+
